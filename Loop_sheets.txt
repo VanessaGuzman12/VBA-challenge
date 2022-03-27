@@ -1,0 +1,13 @@
+Sub loop_sheets()
+
+Dim ws As Worksheet
+
+
+For Each ws In ThisWorkbook.Worksheets
+ws.Activate
+Run "Greatest"
+Run "Ticker"
+
+Next ws
+
+End Sub
